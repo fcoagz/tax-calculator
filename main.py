@@ -7,7 +7,7 @@ import os
 def market():
 
     PT = float(input('Coloca el valor del producto: '))
-    print('{}Bs'.format(PT))
+    print('{}$'.format(PT))
     print('')
     IVA = float(input('Coloca el interes: '))
     print('{}%'.format(IVA))
@@ -16,8 +16,8 @@ def market():
     X = (PT * IVA) / 100
     R = PT + X
 
-    print('Precio inicial : {}bs'.format(PT))
-    print('Interes: {}bs'.format(X))
+    print('Precio inicial : {}$'.format(PT))
+    print('Interes: {}% == {}$'.format(IVA, X))
     print('El precio total: {}bs'.format(R))
     os.system('pause')
     
